@@ -1,0 +1,217 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+        
+        .hand-icon {
+            width: 150px;
+            height: auto;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            position: absolute;
+            left: 15px;
+        }
+        
+        .hamburger span {
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -500px;
+            width: 400px;
+            height: 100%;
+            background-color: #000000;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            padding-top: 60px;
+        }
+        
+        .sidebar.active {
+            left: 0;
+        }
+        
+        .sidebar-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+        }
+        
+        .sidebar ul li {
+            padding: 15px 20px;
+            border-bottom: 1px solid #444;
+        }
+        
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
+        
+        .sidebar ul li a:hover {
+            color: #ccc;
+        }
+        
+        .news-container {
+            padding: 15px;
+        }
+        
+        .news-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .news-content {
+            padding: 15px;
+        }
+        
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .news-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .news-date {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+        }
+        
+        .overlay.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #000;
+        }
+
+        /* Estilo para a seção de agendamento */
+        .appointment-form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .btn-submit {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #333;
+        }
+
+        /* Estilos para conteúdo escondido */
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+    
